@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script>
+
+//    1 task
+    var price, maxNum, userName;
+    var MIN_PRICE;
+
+    let string = "some test string";
+    console.log(string);
+
+    console.log(string[0]);
+    console.log(string.charAt(0));
+
+// Положение слова string
+    console.log(string.slice(-1));
+    console.log(string.indexOf("string"));
+
+// С пятого символа длиной 4 буквы
+    console.log(string.substr(4,4));
+
+//    С пятого символа по 9 символы
+    console.log(string.substring(4,8));
+
+//    Получение новой строки путем удаления последних 6 символов
+    var newStr = ("some test string".slice(0, -6));
+        string = newStr;
+    console.log(string);
+
+//    Из двух переменных а и b получить 2016
+    var a = 20;
+    var b = 16;
+    var c = "" + a + b;
+    console.log(c);
+
+//    Получить число р и округлить до двух знаков
+    var g = Math.PI;
+    g = g.toFixed(2);
+    console.log(g);
+
+//    Вернуть максимальное и минимальное
+
+    console.log(Math.max(15, 11, 16, 12, 51, 12, 13, 51));
+    console.log(Math.min(15, 11, 16, 12, 51, 12, 13, 51));
+
+//     Math.random
+
+ var k = Math.random();
+    k = k.toFixed(2);
+   console.log(k);
+
+    var d = Math.floor(Math.random() * 10);
+    console.log(d);
+
+//    0,6 + 0,7
+
+    var a1 = 0.6;
+    var a2 = 0.7;
+    var c1 = a1 + a2;
+        c1 = Math.round(c1);
+    console.log(c1);
+
+//    "100$"
+
+    var parseI = parseInt("100$");
+    console.log(parseI);
+
+//    Obj
+
+    var obj = {
+        product: "iphone"
+    }
+    obj.price = 1000;
+    obj.currency = "dollar";
+    obj.detail = {};
+    obj.detail.model = "model";
+    obj.detail.color = "color";
+    console.log(obj);
+
+</script>
+
+</body>
+</html>
