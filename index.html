@@ -26,8 +26,20 @@
     var resultString = firstL + replaceString + lastL;
     console.log(resultString);
 
+// Поиск первого и последнего пробелов
 
- Положение слова string
+	var firstL = string[0].toUpperCase();
+	console.log(firstL);
+
+	var empty = string.indexOf(" ");
+	console.log(empty);
+	var secEmpty = string.lastIndexOf(" ");
+
+//  или
+	var secEmpty = string.indexOf(" ", empty + 1);
+	console.log(secEmpty);
+
+// Положение слова string
     console.log(string.slice(-1));
     console.log(string.indexOf("string"));
 
